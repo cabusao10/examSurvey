@@ -1,0 +1,22 @@
+﻿<Page x:Class="examSurvey.Question"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:examSurvey"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+     
+      x:Name="pQuestion"
+      Title="Question">
+
+    <Grid Background="White">
+        
+        <Label x:Name="lblQuestion" Content="{Binding ElementName=pQuestion, Path=pTitle,Mode=OneWay}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="41" Width="780" FontWeight="Bold" FontSize="21" Grid.ColumnSpan="2"/>
+        <StackPanel Margin="0,56,0,0">
+            <Frame x:Name="fOptions" Content="" Height="353" NavigationUIVisibility="Hidden"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
